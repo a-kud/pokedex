@@ -1,0 +1,101 @@
+html
+    box-sizing: border-box
+
+*, *:before, *:after
+    box-sizing: inherit
+
+body
+    display: flex
+    justify-content: center
+
+.global-container
+    display: flex
+    flex-flow: row wrap
+    width: 60vw
+
+// this class is for debug purposes
+// body
+//     border: 1px solid darkmagenta
+// *
+//     border: inherit
+
+main
+    display: flex
+    width: 100%
+
+.image-scaled
+    width: 240px
+    height: 240px
+
+.pokemon-cards-container
+    display: flex
+    flex-flow: row wrap
+    flex: 3 1 auto
+
+.pokemon-details-container
+    flex: 2 1 45%
+
+.pokemon-card, .pokemon-card-detailed
+    border: 1px solid black
+
+.pokemon-card
+    margin: 0 0.2rem 0.2rem
+    display: flex
+    flex-flow: column nowrap
+    align-items: center
+    width: 10rem
+
+.pokemon-card-detailed
+    display: flex
+    flex-flow: row wrap
+    div:nth-child(2), div:nth-child(3)
+        flex: 1 0 50%
+    div:first-child, div:last-child
+        flex: 1 0 100%
+
+.pokemon-types-container
+    display: inline-flex
+    flex-flow: row wrap
+    align-self: center
+
+// container for type name, use with .type-[type_name]
+.pokemon-type
+    border-radius: 0.7rem
+    margin: 0.1rem
+    p
+        padding: 0 1rem
+        margin: 0
+
+.pokemon-details-container
+    display: flex
+    flex-flow: column nowrap
+    align-items: center
+
+.pokemon-image, .pokemon-name,
+.pokemon-id, .stats
+    display: flex
+    justify-content: space-around
+
+.pokemon-image img
+    margin: 0.5rem
+
+.hidden
+    display: none
+
+#pokemon-stats
+    border-collapse: collapse
+    width: 90%
+    margin: 0.5rem
+    td, th
+        border: 1px solid black
+
+#more-button
+    flex: 1 0 calc(100% - 1rem)
+    margin: 0 0.5rem
+    order: 1
+    align-self: flex-end
+
+#head-top
+    width: 100%
+    h1
+        text-align: center

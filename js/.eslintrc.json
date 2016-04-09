@@ -1,0 +1,31 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "script"
+    },
+    "eslintConfig": {
+        "env": {
+            "browser": true
+        }
+    },
+    "rules": {
+        "semi": 2,
+        "no-extra-semi": 1,
+        "no-extra-boolean-cast": 2,
+        "no-irregular-whitespace": 2,
+        "no-unexpected-multiline": 2,
+        "valid-jsdoc": 1,
+        "valid-typeof": 2,
+        "block-scoped-var": 2,
+        "curly": 2,
+        "default-case": 2,
+        "no-unused-vars": 2,
+        "no-mixed-spaces-and-tabs": 2,
+        "no-unused-labels": 2,
+        "no-self-assign": 2,
+        "no-trailing-spaces": 1,
+        "no-multi-spaces": 1,
+        "no-octal": 2,
+        "no-redeclare": 1
+    }
+}

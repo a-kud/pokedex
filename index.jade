@@ -1,0 +1,69 @@
+// output:index.html
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Pokedex
+        link(href="css/main.min.css" rel="stylesheet")
+        link(href="css/pokemon-types.min.css" rel="stylesheet")
+    body
+        .global-container
+            header#head-top
+                h1 Pokedex
+            main
+                .pokemon-cards-container
+                    //-
+                        .pokemon-card layout
+                        .pokemon-card
+                            .pokemon-image
+                                img(src="http://placehold.it/120x120")
+                            .pokemon-name
+                                p Pikachu
+                            .pokemon-types-container
+                                .pokemon-type(class="type-electric")
+                                    p
+                                .pokemon-type(class="type-normal")
+                                    p
+                    button#more-button(type="button") Give me more pokemons
+                //- Wrapper for .pokemon-card-detailed cards                            
+                .pokemon-details-container
+                    //- Wrapper for big pokemon card with details
+                    .pokemon-card-detailed(class="hidden")
+                        .pokemon-image
+                            img#sprite-details(class="image-scaled" src="http://placehold.it/120x120")
+                        .pokemon-name
+                            p.name Pikachu
+                        .pokemon-id
+                            p.id #25
+                        //- Table with various pokemon's abilities
+                        .stats
+                            table#pokemon-stats
+                                tr
+                                    th Type
+                                    th Fire
+                                tr
+                                    td Attack
+                                    td#attack
+                                tr
+                                    td Defense
+                                    td#defense
+                                tr
+                                    td HP
+                                    td#hp
+                                tr
+                                    td SP Attack
+                                    td#sp_atk
+                                tr
+                                    td SP Defense
+                                    td#sp_def
+                                tr
+                                    td Speed
+                                    td#speed
+                                tr
+                                    td Weight
+                                    td#weight
+                                tr
+                                    td Total moves
+                                    td#moves
+        script(src="js/pokemon.js")
