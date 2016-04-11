@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokedex</title>
+    <link href="css/main.min.css" rel="stylesheet">
+    <link href="css/pokemon-types.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="global-container">
+      <header id="head-top">
+        <h1>Pokedex</h1>
+      </header>
+      <main>
+        <div class="pokemon-cards-container">
+          <button id="more-button" type="button">Give me more pokemons</button>
+        </div>
+        <div class="pokemon-details-container">
+          <div class="pokemon-card-detailed hidden">
+            <div class="pokemon-image"><img id="sprite-details" src="http://placehold.it/120x120" class="image-scaled"></div>
+            <div class="pokemon-name">
+              <p class="name">Pikachu</p>
+            </div>
+            <div class="pokemon-id">
+              <p class="id">#25</p>
+            </div>
+            <div class="stats">
+              <table id="pokemon-stats">
+                <tr>
+                  <th>Type</th>
+                  <th>Fire</th>
+                </tr>
+                <tr>
+                  <td>Attack</td>
+                  <td id="attack"></td>
+                </tr>
+                <tr>
+                  <td>Defense</td>
+                  <td id="defense"></td>
+                </tr>
+                <tr>
+                  <td>HP</td>
+                  <td id="hp"></td>
+                </tr>
+                <tr>
+                  <td>SP Attack</td>
+                  <td id="sp_atk"></td>
+                </tr>
+                <tr>
+                  <td>SP Defense</td>
+                  <td id="sp_def"></td>
+                </tr>
+                <tr>
+                  <td>Speed</td>
+                  <td id="speed"></td>
+                </tr>
+                <tr>
+                  <td>Weight</td>
+                  <td id="weight"></td>
+                </tr>
+                <tr>
+                  <td>Total moves</td>
+                  <td id="moves"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/pokemon.js"></script>
+  </body>
+</html>
