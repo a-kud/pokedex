@@ -32,9 +32,6 @@ main
     flex-flow: row wrap
     flex: 3 1 auto
 
-.pokemon-details-container
-    flex: 2 1 45%
-
 .pokemon-card, .pokemon-card-detailed
     border: 1px solid black
 
@@ -70,6 +67,8 @@ main
     display: flex
     flex-flow: column nowrap
     align-items: center
+    flex: 2 1 auto
+    margin-left: 2rem
 
 .pokemon-image, .pokemon-name,
 .pokemon-id, .stats
@@ -90,10 +89,11 @@ main
         border: 1px solid black
 
 #more-button
-    flex: 1 0 calc(100% - 1rem)
-    margin: 0 0.5rem
+    flex: 1 0 calc(100% - 12rem)
+    margin: 0 6rem
     order: 1
-    align-self: flex-end
+    height: 3em
+    // align-self: flex-end
 
 #head-top
     width: 100%
