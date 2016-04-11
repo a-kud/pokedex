@@ -215,8 +215,11 @@ document.querySelector("#more-button").addEventListener("click", loadMore);
 function addListenersForFetchDetails() {
     let pokCards = document.querySelectorAll(".pokemon-card");
 
-    for (let card of pokCards) {
+    /*for (let card of pokCards) {
         card.addEventListener("click", fetchDetails);
+    }*/
+    for (let i = 0; i < pokCards.length; i += 1) {
+        pokCards[i].addEventListener("click", fetchDetails);
     }
 }
 })();
